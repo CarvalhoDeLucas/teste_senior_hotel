@@ -76,7 +76,7 @@ A aplicação estará disponível em:
 
 As migrations estão na pasta `src/main/resources/db/migration`.
 
-Ao subir o projeto, o Flyway executará automaticamente os arquivos `V1__init.sql`, `V2__add_unique_constraints_to_guest.sql`, etc. para criar ou atualizar as tabelas no banco.
+Ao subir o projeto, o Flyway executará automaticamente os arquivos `V1__init.sql` e `V2__add_unique_constraints_to_guest.sql` para criar ou atualizar as tabelas no banco.
 
 ---
 
