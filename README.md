@@ -7,12 +7,12 @@ API RESTful para gerenciamento de hóspedes e check-ins em um hotel. Este projet
 ## 📚 Tecnologias Utilizadas
 
 - **Java 21**
-- **Spring Boot 3.2.5**
+- **Spring Boot 3.3.5**
 - **Spring Data JPA**
 - **Flyway**
 - **PostgreSQL**
 - **Lombok**
-- **Swagger (springdoc-openapi 2.3.0)**
+- **Swagger (springdoc-openapi 2.6.0)**
 - **JUnit 5 + Mockito**
 
 ---
@@ -21,7 +21,7 @@ API RESTful para gerenciamento de hóspedes e check-ins em um hotel. Este projet
 
 ### 1. Pré-requisitos
 
-- Java 21+
+- Java 21
 - Maven 3.8+
 - PostgreSQL
 
@@ -34,7 +34,7 @@ cd teste_senior_hotel
 
 ### 3. Configurar o banco de dados
 
-Crie um banco PostgreSQL local chamado `hotel` (ou modifique o nome no `application.properties`):
+Crie um banco PostgreSQL local chamado `hotel` (ou modifique o nome no `application.yml`):
 
 ```sql
 CREATE DATABASE hotel;
@@ -48,8 +48,8 @@ Em `src/main/resources/application.yml`:
 spring:
     datasource:
         url: jdbc:postgresql://localhost:5432/hotel
-        username: postgres
-        password: 60757692@Lmo
+        username: seu_username
+        password: sua_password
     jpa:
         hibernate:
             ddl-auto: validate
