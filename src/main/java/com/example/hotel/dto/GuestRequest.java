@@ -1,7 +1,8 @@
 package com.example.hotel.dto;
 
-import jakarta.validation.constraints.NotNull;
+import com.example.hotel.validation.AtLeastOneFieldNotNull;
 
+@AtLeastOneFieldNotNull
 public record GuestRequest(
         String name,
         String document,
